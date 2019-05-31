@@ -1,0 +1,30 @@
+<div class="container " >
+    
+    <div class="form-group md-12" > 
+        <label for="nombre" >Nombre:</label>
+        <input type="text" class="form-control" id="nombre" aria-describedby="helpId"
+       required name="Nombre" placeholder="Nombre" [(ngModel)]="datos.nombre"  > <!-- hace referencia al input -->
+    </div>    
+   
+
+
+   <div class="form-group md-12"> 
+        <label for="usuario">usuario:</label>
+        <input type="text" class="form-control" id="usuario" aria-describedby="helpId" name=""
+        placeholder="usuario"[(ngModel)]="datos.usuario">
+    </div>                    
+    <div class="form-group md-12"> 
+        <label for="telefono">Telefono:</label>
+        <input type="text" class="form-control"
+        id="Telefono" aria-describedby="helpId" name="" placeholder="Telefono"[(ngModel)]="datos.telefono">
+    </div>    
+   
+    <div class="form-group md-12"> <!-- direccion-->
+   <label for="direccion">Direccion:</label>
+   <input  class="form-control" id="direccion" aria-describedby="helpId" name="" placeholder="Direccion"[(ngModel)]="datos.direccion">
+    </div>
+                   
+    <div class="form-group md-12"> <!--  Button guardar -->
+      <button type="submit" class="btn btn-primary btn-lg btn-block"(click)='submit()'>Agregar</button>
+  </div> 
+  </div>
